@@ -10,8 +10,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // All routes
-const userRoutes = require("./Routes/user.routes.js");
-app.use("/api/users", userRoutes);
+const userRoutes = require("./Routes/user.routes.js"); 
+app.use("/api/users", userRoutes); // User route
+const clothingRoutes = require("./Routes/clothing.routes.js");
+app.use("/api/clothing", clothingRoutes); // Clothe route
 
 const PORT = 3001;
 app.listen(PORT, () => {
