@@ -1,3 +1,10 @@
+# Shoe Store for 'Verificación y validación de software'.  
+## Evidencia 3
+
+**MEMBERS:**  
+- Carlos Eduardo Sanchéz Ramos -> Backend.
+- Juan Pablo Vazquez Arevalo -> Frontend.
+
 # Shoe-Store Backend 🚀
 
 API Node.js with Express and PostgreSQL.
