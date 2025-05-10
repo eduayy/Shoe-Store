@@ -5,6 +5,7 @@ const client = require("../db.js");
 const getSportShoes = async (req, res) => {
   try {
     const result = await client.query("SELECT * FROM sportShoes");
+    console.log("Obtaining data...");
     return res.json(result.rows);
   } catch (err) {
     console.error("Query failed!", err);
