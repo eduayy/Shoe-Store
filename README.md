@@ -24,6 +24,11 @@ Shoe-Store\Backend> npm start
 ```
 
 ## 📌 Endpoints  
-**GET:**   /api/products   
-**POST:**  /api/products
+**GET Endpoints:**  
+/api/clothing  
+![test of clothing](https://github.com/user-attachments/assets/2ef919b3-9d59-408a-81d4-0bf6d0da1a5c)  
+/api/shoe-sports  
+![test shoe sports](https://github.com/user-attachments/assets/e043ae97-db0a-4f7d-808f-6ee4a64dc40e)
+
+
 
