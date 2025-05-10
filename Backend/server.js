@@ -15,5 +15,13 @@ app.use("/api/users", userRoutes);
 
 const PORT = 3001;
 app.listen(PORT, () => {
-  console.log(`Server port:${PORT}`);
+  console.log(`
+  ╔══════════════════════════════════╗
+  ║                                  ║
+  ║         S E R V E R  O N         ║
+  ║                                  ║
+  ║     http://localhost:${PORT}        ║
+  ║                                  ║
+  ╚══════════════════════════════════╝
+`);
 });

@@ -17,11 +17,29 @@ const client = new Client({
 client
   .connect()
   .then(() => {
-    console.log("DB connected");
+    // Nice animation for backend server running
+    console.log(`
+  ╔════════════════════════════════════════════════════╗
+  ║                                                    ║
+  ║                                                    ║
+  ║               D B C O N N E C T E D                ║
+  ║                                                    ║
+  ║              Express Server READY!!                ║
+  ║                                                    ║
+  ╚════════════════════════════════════════════════════╝
+`);
   })
   .catch((err) => {
-    console.error("Fail connection:", err.message);
-    console.error(err.stack);
+    console.log(`
+  ╔════════════════════════════════════════════════════╗
+  ║                                                    ║
+  ║                                                    ║
+  ║            D B N O T C O N N E C T E D             ║
+  ║                                                    ║
+  ║              Express Server ERROR!!                ║
+  ║                                                    ║
+  ╚════════════════════════════════════════════════════╝
+`);
   });
 
 // EXPORT CLIENT ALWAYS
