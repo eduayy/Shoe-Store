@@ -1,52 +1,92 @@
 .main-content {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #00012b;
 }
 
-h1 {
-  font-size: 24px;
+.form-section {
+  width: 400px;
+  height: auto;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 81, 0.76);
+  background-color: rgb(17, 21, 61);
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+.login-header h1 {
+  font-size: 34px;
   margin-bottom: 20px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(0, 162, 255), rgb(0, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.login-header p {
+  font-size: 20px;
+  text-align: center;
+  background-image: linear-gradient(to left, rgb(75, 189, 255) 60%, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-form {
+.login-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-label {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-input {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  margin-top: 12px;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #007bff;
+.label-login {
   color: white;
+  margin-bottom: 10px;
+}
+
+.form-input-login {
+  width: 90%;
+  height: 35px;
+  margin-bottom: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.btn-submit {
+  width: 70%;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, rgb(75, 189, 255) 20%, blue);
+}
+
+.btn-submit:hover {
+  background-color: blue;
 }
 
 .welcome-message {
   margin-top: 20px;
   font-size: 18px;
-  color: #28a745;
+  color: #a72828;
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
